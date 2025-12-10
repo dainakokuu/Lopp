@@ -60,7 +60,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: rgb(255, 255, 255);
+    color: rgb(22, 64, 253);
     font-weight: 800;
     transform: translateY(-0.35vw);
     display: flex;
@@ -391,4 +391,5 @@ table {
   font-size: 1.04vw;
   color: #333;
 }
+
 
