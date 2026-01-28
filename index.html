@@ -3,75 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Персонажи</title>
+    <title>Сайт кр 1 ВП</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js" defer></script>
 </head>
-<body id="top">
-<div class="wrapper">
+<body>
+    <div class="wrapper">
     <header class="container">
-        <span class="logo"><img src="img/transparent-Photoroom(11)1.png" alt="Логотип"></span>
+        <span class="logo"><img src="img/transparent-Photoroom(11)1.png" width="30%" height="30%" alt=""></span>
 
         <div class="burger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
         </div>
-
+            
         <nav>
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li class="active"><a href="about.html">Персонажи</a></li>
-                <li><a href="server.html">Заявка</a></li>
+            <li class="active"><a href="index.html">Главная</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%92%D1%80%D0%B5%D0%BC%D1%8F_%D0%BF%D1%80%D0%B8%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B9" target="_blank">О сериале</a></li>
+            <li><a href="about.html">Персонажи</a></li>
+            <li class="btn"><a href="server.html">Оставь заявку</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="container page-container">
-        <h1 class="page-title">Ключевые персонажи</h1>
-
-        <div class="page-nav">
-            <a href="#heroes">К героям</a> |
-            <a href="#villains">К злодеям</a> |
-            <a href="#top">Наверх</a>
+    <div class="hero container">
+        <div class="hero--info">
+           <h1>Время Приключений</h1><br>
+           <p>«Время приключений» — мультипликационный сериал, повествующий о приключениях мальчика Финна и его друга — волшебного пса, английского бульдога Джейка в постапокалиптическом мире, называемом «Земли Ууу» (англ. Lands of Ooo). Создан Пендлтоном Уордом и спродюсирован компаниями Frederator Studios и Cartoon Network Studios для канала Cartoon Network в 2010 году. Шоу создано с использованием рисованной анимации и черпало вдохновение из множества источников, включая фэнтезийную ролевую игру Dungeons & Dragons и видеоигры. <br><br> Мультфильмы на Nickelodeon Animation транслировались на Nicktoons. После того, как короткометражка стала вирусным хитом в Интернете, руководители Nickelodeon отказались от неё, прежде чем Cartoon Network заказала полнометражный сериал от Зайберта и Уорда, предварительный просмотр которого состоялся 11 марта 2010 года.<br><br>
+            «Время приключений» имело успех в рейтингах Cartoon Network, некоторые его эпизоды собрали более трёх миллионов зрителей, и, несмотря на то, что сериал был ориентирован в первую очередь на детей, он завоевал популярность среди подростков и взрослых. Adventure Time получил положительные отзывы критиков и получил множество наград. Из множества спин-оффов комиксов, основанных на сериале, один получил несколько премий.</p><br>
+           <button class="btn">Попади к нам в команду</button>
         </div>
+        <img src="img/pngwing.com(30).png" alt="ребята">
 
-        <h2 id="heroes">Герои</h2>
-        <div class="gallery-grid">
-            <div class="gallery-card">
-                <img src="img/Финн.png" alt="Финн Парнишка">
-                <h3>Финн Парнишка</h3>
-            </div>
-            <div class="gallery-card">
-                <img src="img/Джейк.png" alt="Джейк">
-                <h3>Джейк</h3>
-            </div>
-            <div class="gallery-card">
-                <img src="img/4.webp" alt="Марселин">
-                <h3>Марселин</h3>
-            </div>
-        </div>
-
-        <h2 id="villains">Злодеи</h2>
-        <div class="gallery-grid">
-            <div class="gallery-card">
-                <img src="img/Ice_King.png" alt="Снежный Король">
-                <h3>Снежный Король</h3>
-            </div>
-            <div class="gallery-card">
-                <img src="img/png-klev-club-txz0-p-bimo-png-1.png" alt="БиМО">
-                <h3>БиМО</h3>
-            </div>
-            <div class="gallery-card">
-                <img src="img/3.webp" alt="Принцесса Бубльгум">
-                <h3>Принцесса Бубльгум</h3>
-            </div>
-        </div>
+        <a href="#top" target="_self">
+        <img class="crown" src="img/crown.jpg" alt="корона вверх">
+    </a>
     </div>
-</div>
+    </div>
 
-<footer>
+    <footer class="footer">
+    <div>
     <h1>Время Приключений - Adventure Time</h1>
+    </div>
 </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const nav = document.querySelector('header nav');
+    
+    burgerMenu.addEventListener('click', function() {
+        this.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+    
+    // Закрытие меню при клике на ссылку
+    document.querySelectorAll('header nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            burgerMenu.classList.remove('active');
+            nav.classList.remove('active');
+        });
+    });
+});
+</script>
 </body>
 </html>
